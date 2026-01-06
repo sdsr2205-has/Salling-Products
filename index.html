@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Name</title>
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <P data-translate="pms">PRODUCT MANAGEMENT SYSTEM</P>
+        </div>
+
+    <div class="lang-switch">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('ar')">عربي</button>
+    </div>
+
+    <div class="inputs">
+        <input placeholder="title" type="text" id="title" data-translate="title">
+        
+        
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price" data-translate="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" data-translate="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" data-translate="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" data-translate="discount">
+            <small id="total" data-translate="totalLabel"></small>
+
+        </div>
+        <input placeholder="count" type="number" id="count" data-translate="count">
+        <input placeholder="category" type="text" id="category" data-translate="category">
+        
+        <button id="submit" data-translate="create">Create</button>
+    </div>
+    <div class="outputs">
+        <div class="searchblock">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search" data-translate="search">
+            <div class="btnsearch">
+                <button onclick="getSearchMood(this.id)" id="searchTitle" data-translate="SearchTitle">Search By Title</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory" data-translate="SearchCategory">Search By Category</button>
+            </div>
+        </div>
+        <div id="deleteAll">
+        </div>
+        <table>
+            <tr>
+            <th data-translate="id">id</th>
+            <th data-translate="title">title</th>
+            <th data-translate="price">price</th>
+            <th data-translate="taxes">taxes</th>
+            <th data-translate="ads">ads</th>
+            <th data-translate="discount">discount</th>
+            <th data-translate="total">total</th>
+            <th data-translate="category">category</th>
+            <th data-translate="update">update</th>
+            <th data-translate="delete">delete</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

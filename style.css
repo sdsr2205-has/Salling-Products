@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #111;
+    color: #fff;
+    font-family: system-ui;
+}
+.crud{
+    width: 80%;
+    margin:  100px auto 0 auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 1005px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #000;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total{
+    content: 'total';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #067a23;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: #038d48;
+    letter-spacing: 1px;
+
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 45%;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+table button:hover{
+    transform: scale(1.1);
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.lang-switch button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 120px;
+}
+
+.lang-switch button:first-child {
+    background-color: #007bff; /* أزرق للإنجليزي */
+    color: white;
+}
+
+.lang-switch button:last-child {
+    background-color: #28a745; /* أخضر للعربي */
+    color: white;
+}
+
+.lang-switch button:hover {
+    opacity: 0.8;
+}
+.lang-switch button.active{
+    box-shadow: 0 0 10px #fff;
+    transform: scale(1.1);
+}
+
